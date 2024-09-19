@@ -11732,3 +11732,94 @@ html {
     left: -2vw;
   }
 }
+
+/* Animación para el título */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.display-3 {
+    animation: fadeIn 1s ease-in-out;
+}
+
+/* Efecto hover en los botones */
+.btn:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Scroll suave */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Borde interactivo en la imagen de perfil */
+.profile-img {
+    border: 5px solid transparent;
+    transition: border 0.3s ease-in-out;
+}
+
+.profile-img:hover {
+    border: 5px solid #3498db;
+}
+
+/* Personalización de colores */
+:root {
+    --primary-color: #1e30f3;
+    --secondary-color: #e21e80;
+    --text-color: #212529;
+    --background-color: #ffffff;
+}
+
+body {
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+/* Estilo del contenedor */
+.container {
+    padding: 20px;
+}
+
+.navbar {
+    background-color: var(--background-color);
+    border-bottom: 1px solid var(--text-color);
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--secondary-color);
+}
+
+/* Footer */
+footer {
+    background-color: var(--background-color);
+    padding: 20px;
+    text-align: center;
+}
+
+/* Tabla personalizada */
+.table {
+    width: 100%;
+    margin-bottom: 1rem;
+    color: var(--text-color);
+    border-collapse: collapse;
+}
+
+.table th, .table td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #dee2e6;
+}
